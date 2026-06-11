@@ -1,0 +1,9 @@
+# ninja log v7
+12	655	8028854329996620	QtPasswordManager_autogen/timestamp	eab5adaf14c8e0ce
+12	655	8028854329996620	QtPasswordManager_autogen/mocs_compilation.cpp	eab5adaf14c8e0ce
+12	655	8028854329996620	D:/Qt projects/QtPasswordManager/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/QtPasswordManager_autogen/timestamp	eab5adaf14c8e0ce
+12	655	8028854329996620	D:/Qt projects/QtPasswordManager/build/Desktop_Qt_6_9_1_MinGW_64_bit-Debug/QtPasswordManager_autogen/mocs_compilation.cpp	eab5adaf14c8e0ce
+658	2168	8028854330521676	CMakeFiles/QtPasswordManager.dir/QtPasswordManager_autogen/mocs_compilation.cpp.obj	dcda594c4be32c95
+686	2174	8028854330803063	CMakeFiles/QtPasswordManager.dir/main.cpp.obj	a00a7663e451a41d
+690	2178	8028854330843057	CMakeFiles/QtPasswordManager.dir/MainWindow.cpp.obj	4b735f82adce286c
+2178	2551	8028854345718504	QtPasswordManager.exe	6d901ce3a6054859
