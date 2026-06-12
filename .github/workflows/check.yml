@@ -1,8 +1,33 @@
-name: Check Action
-on: [push]
+name: Quick Build
+on: push
 jobs:
-  initUbuntu:
+  linux:
     runs-on: ubuntu-latest
     steps:
-      - name: Install Qt
-        uses: jurplel/install-qt-action@v4
+      - uses: actions/checkout@v4
+      - uses: jurplel/install-qt-action@v4
+        with:
+          version: '6.5.3'
+      - run: |
+          cmake -B build
+          cmake --build build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: linux-app
+          path: build/
+
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: jurplel/install-qt-action@v4
+        with:
+          version: '6.5.3'
+          arch: 'win64_msvc2019_64'
+      - run: |
+          cmake -B build
+          cmake --build build --config Release
+      - uses: actions/upload-artifact@v4
+        with:
+          name: windows-app
+          path: build/Release/
